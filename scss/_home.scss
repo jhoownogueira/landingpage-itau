@@ -1,0 +1,343 @@
+.itau {
+    width: 100%;
+    height: 70.4rem;
+    background: url(../img/background.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            width: 100%;
+            max-width: 49.7rem;
+            height: 100%;
+            padding: 10.5rem 0 7rem 0;
+            h1{
+                width: 100%;
+                max-width: 49.7rem;
+                color: #fff;
+            }
+            p{
+                width: 100%;
+                max-width: 40.8rem;
+                font-size: 2rem;
+                line-height: 150%;
+                color: #fff;
+                margin: 1.6rem 0 3.2rem 0;
+            }
+            .download-app {
+                width: 100%;
+                max-width: 36.8rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10rem;
+                .app-button {
+                    width: 100%;
+                    max-width: 17.6rem;
+                    height: 6.4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #fff;
+                    border-radius: 0.8rem;
+                    background: transparent;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #ffffff1a;
+                    }
+                    .icon {
+                        width: 2.8rem;
+                        height: 2.8rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 1.2rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .info {
+                        height: 3.8rem;
+                        text-align: left;
+                        span {
+                            display: block;
+                            color: #fff;
+                            font-size: 1.3rem;
+                            line-height: 1.6rem;
+                        }
+                        p {
+                            font-family: 'Myriad-Pro-Bold';
+                            font-size: 1.8rem;
+                            line-height: 2.2rem;
+                            margin: 0;   
+                        }
+                    }
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 1.4rem;
+                    line-height: 1.7rem; 
+                    color: #fff;
+                    margin-left: 1.7rem;
+                }
+            }
+        }
+        .right {
+            position: relative;
+            width: 100%;
+            max-width: 70.3rem;
+            height: 100%;
+            .image{
+                position: absolute;
+                width: 100%;
+                bottom: -0.2rem;
+                left: 2.8rem;
+            }
+            .celular-lines {
+                position: absolute;
+                width: 100%;
+                max-width: 33.3rem;
+                bottom: 6.1rem;
+                left: 17.9rem;
+            }
+            .card-contato-acc {
+                position: absolute;
+                left: 4.3rem;
+                bottom: 19.5rem;
+                animation: animationA 5s ease-in-out infinite;
+            }
+            .card-saldo-conta {
+                position: absolute;
+                right: 1.2rem;
+                top: 28.1rem;
+                animation: animationB 5s ease-in-out infinite;
+            }
+            .feito-com-voce {
+                position: absolute;
+                right: 7.2rem;
+                bottom: 5.7rem;
+                p {
+                    width: 4.4rem;
+                    font-family: 'Myriad-Pro-Bold';
+                    font-size: 1.4rem;
+                    line-height: 120%;
+                    color: #fff;
+                    margin-top: 0.9rem;
+                }
+            }
+        }
+    }
+    @include responsive(1280px) {
+        .container {
+            .right {
+                .feito-com-voce {
+                    right: 7.2rem;
+                    bottom: 8.7rem;
+                }
+            }
+        }
+    }
+    @include responsive(1150px) {
+        .container {
+            .right {
+                .card-saldo-conta, .card-contato-acc, .celular-lines {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include responsive(980px) {
+        .container {
+            .left {
+                h1 {
+                    font-size: 5.2rem;
+                }
+            }
+            .right {
+                .image {
+                    left: 0;
+                }
+                .feito-com-voce {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include responsive(768px) {
+        .container {
+            justify-content: center;
+            .left {
+                max-width: 67.7rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    font-size: 5.2rem;
+                    margin-right: 0;
+                }
+            }
+            .right {
+                display: none;
+            }
+        }
+    }
+    @include responsive(480px) {
+        .container {
+            justify-content: center;
+            .left {
+                padding-top: 5rem;
+                .download-app {
+                    .app-button {
+                        &:not(:first-child) {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.services {
+    position: relative;
+    width: 100%;
+    height: 96.4rem;
+    display: flex;
+    justify-content: center;
+    .bg-gray {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        max-width: 45.7rem;
+        height: 100%;
+        background-color: #F4F4F4;
+        z-index: 1;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 13.5rem;
+        padding-bottom: 4rem;
+        z-index: 2;
+        .left {
+            width: 100%;
+            max-width: 59.4rem;
+            height: 66.4rem;
+            margin-right: 11.2rem;
+            margin-top: -6rem;
+            strong {
+                font-family: 'Myriad-Pro-Bold';
+                font-size: 1.4rem;
+                line-height: 110%;
+                letter-spacing: 0.04em;
+                color: #EC7000;
+            }
+            h2 {
+                margin: 3.5rem 0 2.4rem;
+                color: #33303E;
+            }
+            p {
+                font-family: 'Myriad-Pro';
+                font-size: 1.8rem;
+                line-height: 110%;
+                color: #33303E;
+                margin-bottom: 3.2rem;
+            }
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: 10rem;
+                    &:not(:last-child) {
+                        border-bottom: 1.5px solid rgba(100, 80, 57, 0.2);
+                    }
+                    .icon {
+                        width: 3rem;
+                        height: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 3.2rem;
+                    }
+                    span {
+                        font-family: 'Myriad-Pro';
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        color: #7A7786;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(1150px) {
+        .bg-gray {
+            display: none;
+        }
+        .container {
+            flex-direction: column;
+            .left {
+                margin: 0;
+            }
+        }
+    }
+    @include responsive(768px) {
+        .container {
+            padding-top: 5rem;
+            flex-direction: column;
+            .right {
+                margin-top: 5rem;
+            }
+        }
+    }
+    @include responsive(480px) {
+        .container {
+            .left {
+                h2 {
+                    font-size: 4.8rem
+                }
+            }
+            .right {
+                margin-top: 8rem;
+            }
+        }
+    }
+}
+
+@keyframes animationA {
+    0% {
+        transform: scale(1) rotate(0);
+
+    }
+    50% {
+        transform: scale(1.03) rotate(-1deg);
+}
+    100% {
+        transform: scale(1) rotate(0);
+    }
+    
+}
+
+@keyframes animationB {
+    0% {
+        transform: scale(1) rotate(0);
+
+    }
+    50% {
+        transform: scale(1.03) rotate(1deg);
+}
+    100% {
+        transform: scale(1) rotate(0);
+    }
+    
+}

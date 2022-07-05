@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Myriad-Pro;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font-family: Myriad-Pro-Bold;
+    font-size: 1.6rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Myriad-Pro;
+    src: url(../fonts/MyriadProRegular.ttf);
+}
+
+@font-face {
+    font-family: Myriad-Pro-Bold;
+    src: url(../fonts/MyriadProBold.ttf);
+}

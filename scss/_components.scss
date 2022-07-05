@@ -1,0 +1,111 @@
+$orange: #EC7000;
+$blue: #106EB0;
+$yellow: #F1AE2F;
+
+
+.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4.2rem;
+    height: 8rem;
+    background-color: #106EB0;
+    border: none;
+    color: #fff;
+    transition: all 0.8s;
+    &:hover {
+        color: $blue;
+        background-color: #fff;
+            img {
+                opacity: 0;
+        }
+
+    }
+    img {
+        margin-right: 1.6rem;
+    }    
+}
+.card-contato-acc {
+    width: 20.8rem;
+    height: 6.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    .perfil {
+        margin-right: 1.4rem;
+        .icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFE8D7;
+            p {
+                font-family: 'Myriad-Pro-Bold';
+                font-size: 1.4rem;
+                line-height: 113.2%;
+                color: #EC7000;
+            }
+        }
+    }
+    .info-card {
+        p {
+            font-family: 'Myriad-Pro-Bold';
+            font-size: 1.4rem;
+            line-height: 117.2%;  
+            color: #645039;             
+        }
+        span {
+            font-family: 'Myriad-Pro';
+            font-size: 1rem;
+            line-height: 113.2%;
+            color: #645039;
+        }
+    }
+}
+.card-saldo-conta {
+    width: 21.3rem;
+    height: 11.4rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    p {
+        font-family: 'Myriad-Pro-Bold';
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        color: #645039; 
+        padding: 1.4rem 0 0 1.8rem;  
+    }
+    span {
+        font-family: 'Myriad-Pro';
+        font-size: 1rem;
+        line-height: 113.2%;
+        color: #645039;
+        padding: 0.5rem 0 0 1.8rem;
+    }
+    .extrato {
+        margin-top: 1.2rem;
+        height: 4rem;
+        border-top: 1.5px solid #6450391a;
+        padding: 1.4rem 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            padding: 0;
+            font-family: 'Myriad-Pro-Bold';
+            font-size: 1rem;
+            line-height: 113.2%;
+            color: $blue;
+        }
+    }
+}
+
+@mixin responsive($screenWidth) {
+    @media(max-width: $screenWidth) {
+        @content;
+    }
+}
