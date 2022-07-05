@@ -286,6 +286,7 @@
         }
         .container {
             flex-direction: column;
+            justify-content: flex-start;
             .left {
                 margin: 0;
             }
@@ -294,7 +295,6 @@
     @include responsive(768px) {
         .container {
             padding-top: 5rem;
-            flex-direction: column;
             .right {
                 margin-top: 5rem;
             }
