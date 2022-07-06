@@ -12,12 +12,74 @@
 <body>
     <header>
         <div class="container">
+            <div class="accordion">
+                <div class="content">
+                    <nav>
+                        <ul>
+                            <li><strong>Conheça nossos produtos</strong></li>
+                            <li><a href="">Empréstimos e financiamentos</a></li>
+                            <li><a href="">Conta-corrente</a></li>
+                            <li><a href="">Cartões de crédito</a></li>
+                            <li><a href="">Investimentos</a></li>
+                            <li><a href="">Título de captalização</a></li>
+                            <li><a href="">Consórcio</a></li>
+                            <li><a href="">Seguros</a></li>
+                            <li><a href="">Câmbio e viagem</a></li>
+                            <li><a href="">Correspondentes no país</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>
+                        <ul>
+                            <li><strong>Resolva</strong></li>
+                            <li><a href="">Boletos</a></li>
+                            <li><a href="">Comprovantes</a></li>
+                            <li><a href="">Cadastro positivo</a></li>
+                            <li><a href="">Portabilidade de salário</a></li>
+                            <li><a href="">Sistema de informações de crédito</a></li>
+                            <li><a href="">Renegociações de dívidas</a></li>
+                            <li><a href="">Abra sua conta</a></li>
+                        </ul>
+                        <ul>
+                            <li><strong>Outro perfis</strong></li>
+                            <li><a href="">Itaú Uniclass</a></li>
+                            <li><a href="">Itaú Personnalité</a></li>
+                            <li><a href="">Itaú Private Bank</a></li>
+                            <li><a href="">Itaú Empresas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="accordion ajuda">
+                <div class="content">
+                    <nav>
+                        <ul>
+                            <li><strong>Central de ajuda</strong></li>
+                            <li><a href="">Ajuda para você</a></li>
+                            <li><a href="">Ajuda para empresas</a></li>
+                            <li><a href="">Ajuda para pode público</a></li>
+                        </ul>
+                        <ul>
+                            <li><strong>Dúvidas frequentes</strong></li>
+                            <li><a href="">iTokens</a></li>
+                            <li><a href="">Renegociação</a></li>
+                            <li><a href="">Cartão Virtual</a></li>
+                            <li><a href="">Fatura</a></li>
+                            <li><a href="">Limite</a></li>
+                        </ul>
+                        <ul>
+                            <li><strong>Fale com a gente</strong></li>
+                            <li><a href="">App Itaú</a></li>
+                            <li><a href="">Telefones</a></li>
+                            <li><a href="">Encontre Agências</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
             <div class="left">
                 <nav>
                     <img src="img/logo-itau.svg" alt="" class="logo">
                     <ul>
                     <li>
-                        <a href="">
+                        <a href="" id="btn-accordion-para-voce">
                             <span>Para você</span>
                             <img src="img/arrow-down-accordion.svg" alt="">
                         </a>         
@@ -33,7 +95,7 @@
                         </a>         
                     </li>
                     <li>
-                        <a href="">
+                        <a href="" id="btn-accordion-ajuda">
                             <span>Ajuda</span>
                             <img src="img/arrow-down-accordion.svg" alt="">
                         </a>         
@@ -165,14 +227,13 @@
         </div>
     </section>
 
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
             once: true
         });
-
-        console.log(AOS);
       </script>
 </body>
 </html>
