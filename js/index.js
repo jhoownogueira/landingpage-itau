@@ -27,8 +27,9 @@ const menuHamburguer = document.getElementById('menu-hamburguer');
 const btnMobileParaVoce = document.getElementById('btn-mobile-accordion-para-voce');
 const accordionParaVoceMobile = document.querySelector('.mobile-accordion.para-voce');
 
-const btnMobileAjuda = document.getElementById('btn-accordion-ajuda');
+const btnMobileAjuda = document.getElementById('btn-mobile-accordion-ajuda');
 const accordionAjudaMobile = document.querySelector('.mobile-accordion.ajuda');
+console.log(accordionAjudaMobile)
 
 
 menuHamburguer.addEventListener('click', () => {
