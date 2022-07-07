@@ -34,6 +34,7 @@ console.log(accordionAjudaMobile)
 
 menuHamburguer.addEventListener('click', () => {
     toggleClass(contentMenuMobile);
+    toggleClass(document.documentElement);
 })
 
 btnMobileParaVoce.addEventListener('click', (e) => {
