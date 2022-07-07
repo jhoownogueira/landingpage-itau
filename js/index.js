@@ -2,8 +2,6 @@ const btnParaVoce = document.getElementById('btn-accordion-para-voce');
 const btnAjuda = document.getElementById('btn-accordion-ajuda');
 const menuParaVoce = document.querySelector('.accordion');
 const menuAjuda = document.querySelector('.accordion.ajuda');
-console.log(menuAjuda)
-
 
 btnAjuda.addEventListener('click', (e) => {
     e.preventDefault();
@@ -21,6 +19,30 @@ btnParaVoce.addEventListener('click', (e) => {
     menuParaVoce.addEventListener('mouseleave', () => {
         removeClass(menuParaVoce);
     })
+})
+
+const contentMenuMobile = document.getElementById('content-menu-mobile');
+const menuHamburguer = document.getElementById('menu-hamburguer');
+
+const btnMobileParaVoce = document.getElementById('btn-mobile-accordion-para-voce');
+const accordionParaVoceMobile = document.querySelector('.mobile-accordion.para-voce');
+
+const btnMobileAjuda = document.getElementById('btn-accordion-ajuda');
+const accordionAjudaMobile = document.querySelector('.mobile-accordion.ajuda');
+
+
+menuHamburguer.addEventListener('click', () => {
+    toggleClass(contentMenuMobile);
+})
+
+btnMobileParaVoce.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleClass(accordionParaVoceMobile);
+})
+
+btnMobileAjuda.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleClass(accordionAjudaMobile);
 })
 
 function toggleClass(item) {
